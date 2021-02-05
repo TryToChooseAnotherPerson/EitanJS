@@ -9,13 +9,13 @@ function equation() {
     document.getElementById('secondAnswer').value = "Something went wrong!";
   }
   else if (discr < 0){
-    document.getElementById('secondAnswer').value = "У данного уравнения нет решения";
+    document.getElementById('secondAnswer').value = "למשוואה זו אין פתרון";
     document.getElementById('thirdAnswer').value = "-";
   }else if (discr == 0){
-    document.getElementById('secondAnswer').value = "У данного уравнения может быть один корень";
+    document.getElementById('secondAnswer').value = "למשוואה זו יכול להיות שורש אחד";
     document.getElementById('thirdAnswer').value = ((- b - sqrDiscr) / (2 * a));
   }else if (discr > 0){
-    document.getElementById('secondAnswer').value = "У данного уравнения может быть два корня";
+    document.getElementById('secondAnswer').value = "למשוואה זו יכול להיות שני שורשים";
     document.getElementById('thirdAnswer').value = ((- b + sqrDiscr) / (2 * a)) + ";     " + ((- b - sqrDiscr) / (2 * a));
   }
 }
