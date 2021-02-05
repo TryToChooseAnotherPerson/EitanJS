@@ -6,7 +6,7 @@ function equation() {
   var sqrDiscr = Math.sqrt(discr);
   document.getElementById('answer').value = discr;
   if (a == 0 && b == 0 && c == 0){
-    document.getElementById('secondAnswer').value = "Something went wrong!";
+    document.getElementById('secondAnswer').value = "משהו לא עבד!";
   }
   else if (discr < 0){
     document.getElementById('secondAnswer').value = "למשוואה זו אין פתרון";
